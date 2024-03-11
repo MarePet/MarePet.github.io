@@ -1,5 +1,5 @@
 <?php
-
+header('Access-Control-Allow-Origin: *');
 include '../connection.php';
 
 $subId = $_POST['sub_id'];

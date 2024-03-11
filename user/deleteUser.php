@@ -1,10 +1,10 @@
 <?php
-
+header('Access-Control-Allow-Origin: *');
 include '../connection.php';
 
 $userId = $_POST['user_id'];
 
-$sqlQuery = "DELETE FROM Users WHERE user_id = $userId";
+$sqlQuery = "DELETE FROM users WHERE user_id = $userId";
 
 $result = $connectNow->query($sqlQuery);
 

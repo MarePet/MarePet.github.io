@@ -1,8 +1,10 @@
 <?php
 
+header('Access-Control-Allow-Origin: *');
 include '../connection.php';
 
 $taskId = $_POST['task_id'];
+
 
 $sqlQuery = "SELECT categories.* FROM categories
 JOIN task_category ON categories.category_id = task_category.category_id

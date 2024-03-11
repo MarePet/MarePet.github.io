@@ -1,4 +1,5 @@
 <?php 
+header('Access-Control-Allow-Origin: *');
 $serverHost = "fdb1032.awardspace.net";
 $user = "4455490_tskmstr";
 $password = "parcepapira1";
