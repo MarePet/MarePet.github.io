@@ -4,7 +4,7 @@ include '../connection.php';
 
 $creatorId = $_POST['creator_id'];
 
-$sqlQuery = "SELECT * FROM Task WHERE creator_id = $creatorId ORDER BY task_id DESC LIMIT 1";
+$sqlQuery = "SELECT * FROM task WHERE creator_id = $creatorId ORDER BY task_id DESC LIMIT 1";
 
 $result = $connectNow->query($sqlQuery);
 
